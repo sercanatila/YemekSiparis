@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YemekKayitGuncelleActivity">
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/sptyemekresmi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/anayemekler"
+        app:c_border_color="@color/black"
+        app:c_border="true"
+        app:c_border_width="2dp"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/siparis_yemekadi"
+        android:layout_below="@id/sptyemekresmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@android:color/transparent"
+        android:layout_margin="15dp"
+        android:hint="Yemek Adı"/>
+
+    <TextView
+        android:id="@+id/siparis_fiyat"
+        android:layout_below="@id/siparis_yemekadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@android:color/transparent"
+        android:layout_margin="15dp"
+        android:hint="Yemek Fİyatı"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/siparis_fiyat"
+        android:padding="12dp"
+        android:background="@android:color/transparent"
+        android:layout_margin="15dp"
+        android:id="@+id/siparisadet"
+        android:hint="Sipariş Adeti"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/siparisbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_baseline_save_alt_24"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="3dp"
+    app:cardBackgroundColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/yemekfoto"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/anayemekler"
+            app:c_border="true"
+            app:c_border_color="@color/black"
+            app:c_border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/yemekfoto"
+            android:layout_toRightOf="@+id/yemekfoto"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/twanaisim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yemek İsmi"
+                android:padding="4dp"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/twanafiyat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yemek Fiyatı"
+                android:padding="4dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/morebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_more_vert_24" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

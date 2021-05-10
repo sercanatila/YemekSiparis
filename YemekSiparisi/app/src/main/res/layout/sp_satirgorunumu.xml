@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="3dp"
+    app:cardBackgroundColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/spanaad"
+                android:textSize="18dp"
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kullanıcı İsmi" />
+            <TextView
+                android:id="@+id/spanatelefon"
+                android:textSize="18dp"
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kullanıcı Telefon" />
+            <TextView
+                android:id="@+id/spanaadres"
+                android:textSize="18dp"
+                android:padding="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kullanıcı Adres" />
+            <TextView
+                android:id="@+id/spanayad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yemek İsmi"
+                android:padding="4dp"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/spanaadet"
+                android:textSize="18dp"
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yemek Adeti" />
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

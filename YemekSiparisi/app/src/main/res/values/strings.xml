@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">YemekSiparisi</string>
+    <string-array name="turler">
+        <item>Ana Yemek</item>
+        <item>Aperatif</item>
+        <item>Tatlı</item>
+        <item>İçecek</item>
+    </string-array>
+</resources>
